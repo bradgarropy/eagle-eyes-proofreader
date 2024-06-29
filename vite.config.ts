@@ -1,14 +1,15 @@
-import {vitePlugin as remix} from "@remix-run/dev"
-import {installGlobals} from "@remix-run/node"
+import {
+    cloudflareDevProxyVitePlugin as remixCloudflare,
+    vitePlugin as remix,
+} from "@remix-run/dev"
 import react from "@vitejs/plugin-react"
 import {defineConfig} from "vite"
 import tsconfigPaths from "vite-tsconfig-paths"
 
-installGlobals()
-
 const config = defineConfig({
     plugins: [
         tsconfigPaths(),
+        process.env.VITEST ? undefined : remixCloudflare(),
         process.env.VITEST
             ? react()
             : remix({
