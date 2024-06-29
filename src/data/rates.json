@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Urgent",
+        "time": "Day",
+        "rate": 0.03
+    },
+    {
+        "name": "Standard",
+        "time": "Week",
+        "rate": 0.015
+    },
+    {
+        "name": "Relaxed",
+        "time": "Month",
+        "rate": 0.005
+    }
+]
