@@ -149,8 +149,16 @@ const IndexRoute = () => {
             </section>
 
             <section id="contact" className="text-center mt-16">
-                <h2 className="text-3xl font-bold mb-4">Contact</h2>
-                <p>Insert Google Form here.</p>
+                <h2 className="text-4xl font-bold mb-4">
+                    <a
+                        href="https://forms.gle/uMhkq97Q6Dvc31meA"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="px-24 py-10 border-4 border-black rounded-2xl inline-block"
+                    >
+                        Get Started
+                    </a>
+                </h2>
             </section>
 
             <footer>

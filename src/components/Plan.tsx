@@ -17,8 +17,16 @@ const Plan: FC<PlanProps> = ({plan}) => {
             )}
         >
             <h3 className="text-2xl font-semibold mb-4">{plan.name}</h3>
-            <p>{plan.time}</p>
-            <p>{`${formatPrice(plan.price, 3)} / word`}</p>
+
+            <p className="mb-4">
+                <span className="text-3xl">{formatPrice(plan.price, 3)}</span>
+                <span className="text-sm"> / word</span>
+            </p>
+
+            <p>{`One ${plan.time} Turnaround`}</p>
+            <p>Detailed read of the book</p>
+            <p>Spelling and grammar checks</p>
+            <p>Comprehension suggestions</p>
         </div>
     )
 }
