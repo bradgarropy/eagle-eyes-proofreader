@@ -26,6 +26,11 @@ const App = () => {
             <head>
                 <Meta />
                 <Links />
+
+                <meta
+                    httpEquiv="Content-Type"
+                    content="text/html;charset=utf-8"
+                />
             </head>
 
             <body>

@@ -1,6 +1,8 @@
 type Testimonial = {
-    name: string
-    link: string
+    author: string
+    book: string
+    authorLink: string
+    bookLink: string
     quote: string
 }
 

@@ -30,7 +30,7 @@ const IndexRoute = () => {
                 </h1>
 
                 <p className="text-xl mt-8">
-                    Some text here driving the point home with a little flavor.
+                    No mistakes make it past this sharp sighted reader.
                 </p>
             </section>
 
@@ -38,17 +38,41 @@ const IndexRoute = () => {
                 id="bio"
                 className="flex justify-center items-center gap-x-6 mt-16"
             >
-                <img
-                    src="https://placehold.co/320x180"
-                    alt="Heather Kelley"
-                    className="rounded-lg border-2 border-black"
-                />
+                <div className="flex flex-col items-center gap-y-4">
+                    <img
+                        src="https://res.cloudinary.com/bradgarropy/image/upload/f_auto,q_auto,c_auto,g_auto,w_500,h_300/eagle-eyes-proofreader/flowers.jpg"
+                        alt="Heather Kelley"
+                        className="rounded-lg border-2 border-black max-w-[500px]"
+                    />
 
-                <p className="max-w-64">
-                    A nice biography about you being a teacher. It should give a
-                    litte background on yourself, explain how you got into this,
-                    and justify why you&apos;re the right choice for the job.
-                </p>
+                    <p className="leading-loose max-w-2xl">
+                        I have been an avid reader since I was a child. I
+                        don&apos;t even know how many books I own. I did my
+                        first book launch in 2019 for a friend and fell in love
+                        with book launches! Early copies of a book, yes please!
+                        Then in 2021 a company called Booksirens reached out to
+                        me and asked if I would be interested in doing advanced
+                        reader copies... again, free early copies of books, so I
+                        was in. While I was reading these advanced copies I
+                        would always find typos, and usually multiple typos,
+                        even though these books have already been proofread and
+                        edited in most cases. In October 2023, one of those
+                        authors told me I should consider being a professional
+                        proofreader. So here I am! I am a teacher, so I think
+                        the mistakes just pop off the pages at me as I&apos;m
+                        reading. I think the biggest difference between me and
+                        other proofreaders, is that I am going to actually read
+                        the book, not just skim it. This is why I find so many
+                        mistakes. A lot of times the mistakes I find are not
+                        misspelled words (although I do find those too!), they
+                        are words that don&apos;t belong, or a word used twice,
+                        or the wrong tense... a spell check program can find
+                        your misspelled words, but it won&apos;t find the
+                        mistakes I&apos;m finding. If you are interested in
+                        having me proofread your book, please fill out the
+                        Google Form and I will get back to you asap.
+                    </p>
+                </div>
             </section>
 
             <section id="pricing" className="mt-16">
@@ -117,7 +141,7 @@ const IndexRoute = () => {
                 {testimonials.map(testimonial => {
                     return (
                         <Testimonial
-                            key={testimonial.name}
+                            key={testimonial.author}
                             testimonial={testimonial}
                         />
                     )
@@ -131,7 +155,7 @@ const IndexRoute = () => {
 
             <footer>
                 <p className="text-center mt-16">
-                    &copy; {new Date().getFullYear()} Eagle Eyes Proofreader
+                    © {new Date().getFullYear()} Eagle Eyes Proofreader
                 </p>
             </footer>
         </div>

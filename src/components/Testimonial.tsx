@@ -9,10 +9,15 @@ type TestimonialProps = {
 const Testimonial: FC<TestimonialProps> = ({testimonial}) => {
     return (
         <div className="w-full max-w-2xl mx-auto">
-            <p>{testimonial.quote}</p>
+            <p className="leading-loose">{testimonial.quote}</p>
 
-            <h3 className="mt-4">
-                <a href={testimonial.link}>{testimonial.name}</a>
+            <h3 className="text-2xl mt-4">
+                <a
+                    href={testimonial.authorLink}
+                    className="underline underline-offset-4 decoration-wavy decoration-red-500 hover:decoration-2"
+                >
+                    {testimonial.author}
+                </a>
             </h3>
         </div>
     )
