@@ -43,6 +43,7 @@
         "new": "plop"
     },
     "dependencies": {
+        "@heroicons/react": "^2.1.5",
         "@remix-run/cloudflare": "^2.10.0",
         "@remix-run/cloudflare-pages": "^2.10.0",
         "@remix-run/react": "^2.2.0",

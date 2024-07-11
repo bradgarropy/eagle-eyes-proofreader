@@ -11,6 +11,15 @@ export const meta: MetaFunction = () => [
     {
         title: "Eagle Eyes",
     },
+    {
+        name: "description",
+        content: "Ensuring perfection for you and your readers.",
+    },
+    {
+        name: "keywords",
+        content:
+            "eagle eyes, proofreader, proofreaders, proofreading, editor, editors, editing, book, books, author, authors, writer, writers, spelling, spell check, grammer, grammar check, manuscript, pre-publication, error, errors, correct, correction, corrections, novel, novels",
+    },
 ]
 
 const IndexRoute = () => {
@@ -29,8 +38,8 @@ const IndexRoute = () => {
                     Eagle Eyes Proofreader
                 </h1>
 
-                <p className="text-xl mt-8">
-                    No mistakes make it past this sharp sighted reader.
+                <p className="text-xl mt-8 text-gray-700">
+                    Ensuring perfection for you and your readers.
                 </p>
             </section>
 
@@ -76,7 +85,13 @@ const IndexRoute = () => {
             </section>
 
             <section id="pricing" className="mt-16">
-                <h2 className="text-3xl font-bold text-center mb-4">Pricing</h2>
+                <div className="mb-12 text-center">
+                    <h2 className="text-3xl font-bold">Proofreading Plans</h2>
+
+                    <p className="text-gray-700">
+                        Flexible plans to fit your budget and timeline.
+                    </p>
+                </div>
 
                 <div className="flex justify-center gap-x-8">
                     {plans.map(plan => {
@@ -84,7 +99,7 @@ const IndexRoute = () => {
                     })}
                 </div>
 
-                <h2 className="text-3xl font-bold text-center mt-8 mb-4">
+                <h2 className="text-3xl font-bold text-center mt-12 mb-4">
                     Calculator
                 </h2>
 
@@ -135,7 +150,7 @@ const IndexRoute = () => {
 
             <section id="testimonials" className="mt-16">
                 <h2 className="text-3xl font-bold text-center mb-4">
-                    Testimonials
+                    Authors Love Eagle Eyes!
                 </h2>
 
                 {testimonials.map(testimonial => {
@@ -148,7 +163,7 @@ const IndexRoute = () => {
                 })}
             </section>
 
-            <section id="contact" className="text-center mt-16">
+            <section id="contact" className="text-center mt-24">
                 <h2 className="text-4xl font-bold mb-4">
                     <a
                         href="https://forms.gle/uMhkq97Q6Dvc31meA"
@@ -162,7 +177,7 @@ const IndexRoute = () => {
             </section>
 
             <footer>
-                <p className="text-center mt-16">
+                <p className="text-center mt-32">
                     © {new Date().getFullYear()} Eagle Eyes Proofreader
                 </p>
             </footer>
