@@ -51,7 +51,7 @@ const IndexRoute = () => {
                     <img
                         src="https://res.cloudinary.com/bradgarropy/image/upload/f_auto,q_auto,c_auto,g_auto,w_500,h_300/eagle-eyes-proofreader/flowers.jpg"
                         alt="Heather Kelley"
-                        className="rounded-lg border-2 border-black max-w-[500px]"
+                        className="rounded-lg border-2 border-gray-500 max-w-[500px]"
                     />
 
                     <p className="leading-loose max-w-2xl">
