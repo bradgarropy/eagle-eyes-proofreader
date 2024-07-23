@@ -23,18 +23,18 @@ export const meta: MetaFunction = () => [
 ]
 
 const IndexRoute = () => {
-    const [words, setWords] = useState(100000)
-    const [plan, setPlan] = useState(plans[1])
-    const [total, setTotal] = useState(words * plan.price)
+    const [words, setWords] = useState(250000)
+    const [selectedPlan, setSelectedPlan] = useState(plans[1])
+    const [total, setTotal] = useState(words * selectedPlan.price)
 
     useEffect(() => {
-        setTotal(words * plan.price)
-    }, [words, plan])
+        setTotal(words * selectedPlan.price)
+    }, [words, selectedPlan])
 
     return (
         <div className="px-12 py-16 bg-gradient-to-b from-white from-80% to-yellow-300">
             <section id="hero" className="text-center">
-                <h1 className="text-6xl font-extrabold underline underline-offset-[1rem] decoration-wavy decoration-red-500 ">
+                <h1 className="text-6xl font-extrabold underline underline-offset-[1rem] decoration-wavy decoration-eagle-red ">
                     Eagle Eyes Proofreader
                 </h1>
 
@@ -95,7 +95,14 @@ const IndexRoute = () => {
 
                 <div className="flex justify-center gap-x-8">
                     {plans.map(plan => {
-                        return <Plan key={plan.name} plan={plan} />
+                        return (
+                            <Plan
+                                key={plan.name}
+                                plan={plan}
+                                selected={plan.name === selectedPlan.name}
+                                onClick={() => setSelectedPlan(plan)}
+                            />
+                        )
                     })}
                 </div>
 
@@ -108,42 +115,19 @@ const IndexRoute = () => {
                         type="range"
                         name="words"
                         id="words"
-                        min={50000}
-                        max={150000}
+                        min={1000}
+                        max={500000}
                         step={1000}
                         value={words}
                         onChange={event => {
                             setWords(Number(event.target.value))
                         }}
                     />
-
-                    <select
-                        name="plan"
-                        id="plan"
-                        value={plan.name}
-                        onChange={event => {
-                            const selectedPlan = plans.find(
-                                plan => plan.name === event.target.value,
-                            )
-
-                            if (selectedPlan) {
-                                setPlan(selectedPlan)
-                            }
-                        }}
-                    >
-                        {plans.map(plan => {
-                            return (
-                                <option key={plan.name} value={plan.name}>
-                                    {plan.name}
-                                </option>
-                            )
-                        })}
-                    </select>
                 </div>
 
                 <div className="flex flex-col items-center mt-4">
                     <p>{`${formatNumber(words)} words`}</p>
-                    <p className="underline underline-offset-4">{`${formatPrice(plan.price, 3)} / word`}</p>
+                    <p className="underline underline-offset-4">{`${formatPrice(selectedPlan.price, 3)} / word`}</p>
                     <p className="font-bold">{`${formatPrice(total)}`}</p>
                 </div>
             </section>
