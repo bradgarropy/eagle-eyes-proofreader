@@ -88,12 +88,17 @@ const IndexRoute = () => {
                     })}
                 </div>
 
-                <h2 className="text-3xl font-bold text-center mt-12 mb-4">
-                    Calculator
-                </h2>
+                <div className="mt-12 text-center">
+                    <h2 className="text-3xl font-bold">Pricing Calculator</h2>
 
-                <div className="flex justify-center">
+                    <p className="text-gray-700">
+                        Ensure the price is right for you.
+                    </p>
+                </div>
+
+                <div className="flex justify-center mt-8">
                     <input
+                        className="w-1/2 accent-eagle-red cursor-pointer"
                         type="range"
                         name="words"
                         id="words"
@@ -107,10 +112,12 @@ const IndexRoute = () => {
                     />
                 </div>
 
-                <div className="flex flex-col items-center mt-4">
-                    <p>{`${formatNumber(words)} words`}</p>
-                    <p className="underline underline-offset-4">{`${formatPrice(selectedPlan.price, 3)} / word`}</p>
-                    <p className="font-bold">{`${formatPrice(total)}`}</p>
+                <div className="grid grid-cols-[12ch,auto,11ch,auto,7ch] justify-center gap-x-8 text-2xl tabular-nums mt-8">
+                    <p className="justify-self-end">{`${formatNumber(words)} words`}</p>
+                    <p>{"×"}</p>
+                    <p className="justify-self-center">{`${formatPrice(selectedPlan.price, 3)} / word`}</p>
+                    <p>{"="}</p>
+                    <p className="font-bold justify-self-end">{`${formatPrice(total)}`}</p>
                 </div>
             </section>
 

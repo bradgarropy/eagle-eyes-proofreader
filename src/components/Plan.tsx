@@ -42,9 +42,6 @@ const Plan: FC<PlanProps> = ({plan, selected = false, onClick}) => {
 
                 <ShieldCheckIcon className="size-5" />
                 <p>Spelling and grammar checks</p>
-
-                {/* <SparklesIcon className="size-5" />
-                <p>Comprehension suggestions</p> */}
             </div>
         </button>
     )
