@@ -55,31 +55,13 @@ const IndexRoute = () => {
                     />
 
                     <p className="leading-loose max-w-2xl">
-                        I have been an avid reader since I was a child. I
-                        don&apos;t even know how many books I own. I did my
-                        first book launch in 2019 for a friend and fell in love
-                        with book launches! Early copies of a book, yes please!
-                        Then in 2021 a company called Booksirens reached out to
-                        me and asked if I would be interested in doing advanced
-                        reader copies... again, free early copies of books, so I
-                        was in. While I was reading these advanced copies I
-                        would always find typos, and usually multiple typos,
-                        even though these books have already been proofread and
-                        edited in most cases. In October 2023, one of those
-                        authors told me I should consider being a professional
-                        proofreader. So here I am! I am a teacher, so I think
-                        the mistakes just pop off the pages at me as I&apos;m
-                        reading. I think the biggest difference between me and
-                        other proofreaders, is that I am going to actually read
-                        the book, not just skim it. This is why I find so many
-                        mistakes. A lot of times the mistakes I find are not
-                        misspelled words (although I do find those too!), they
-                        are words that don&apos;t belong, or a word used twice,
-                        or the wrong tense... a spell check program can find
-                        your misspelled words, but it won&apos;t find the
-                        mistakes I&apos;m finding. If you are interested in
-                        having me proofread your book, please fill out the
-                        Google Form and I will get back to you asap.
+                        Since I was a child I have read more books than I can
+                        count. Now I work as a teacher, so mistakes naturally
+                        jump off the page to me! Reading early copies of books
+                        feels like being a part of a secret club. I will not
+                        just skim your book, I am genuinely interested in your
+                        work. And as a curious reader, I deeply care about the
+                        quality and sensibility of your writing.
                     </p>
                 </div>
             </section>
@@ -133,7 +115,7 @@ const IndexRoute = () => {
             </section>
 
             <section id="testimonials" className="mt-16">
-                <h2 className="text-3xl font-bold text-center mb-4">
+                <h2 className="text-3xl font-bold text-center mb-16">
                     Authors Love Eagle Eyes!
                 </h2>
 
