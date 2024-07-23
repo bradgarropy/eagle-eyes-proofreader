@@ -35,7 +35,7 @@ const Plan: FC<PlanProps> = ({plan, selected = false, onClick}) => {
 
             <div className="grid grid-cols-[auto,1fr] gap-x-4 gap-y-2 justify-items-start items-center mt-10 text-gray-700">
                 <ClockIcon className="size-5" />
-                <p>{`One ${plan.time} Turnaround`}</p>
+                <p>{`One ${plan.time} turnaround`}</p>
 
                 <BookOpenIcon className="size-5" />
                 <p>Detailed read of the book</p>

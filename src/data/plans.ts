@@ -3,17 +3,17 @@ import type {Plan} from "~/types/types"
 const plans: Plan[] = [
     {
         name: "Relaxed",
-        time: "Month",
+        time: "month",
         price: 0.005,
     },
     {
         name: "Standard",
-        time: "Week",
+        time: "week",
         price: 0.015,
     },
     {
         name: "Urgent",
-        time: "Day",
+        time: "day",
         price: 0.03,
     },
 ]
