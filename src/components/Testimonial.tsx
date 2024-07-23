@@ -14,7 +14,7 @@ const Testimonial: FC<TestimonialProps> = ({testimonial}) => {
             <h3 className="text-2xl mt-4">
                 <a
                     href={testimonial.authorLink}
-                    className="underline underline-offset-4 decoration-wavy decoration-red-500 hover:decoration-2"
+                    className="underline underline-offset-4 decoration-wavy decoration-eagle-red hover:decoration-2"
                 >
                     {testimonial.author}
                 </a>
