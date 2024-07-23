@@ -98,7 +98,7 @@ const IndexRoute = () => {
 
                 <div className="flex justify-center mt-8">
                     <input
-                        className="w-1/2 accent-eagle-red cursor-pointer"
+                        className="max-w-2xl w-full accent-eagle-red cursor-pointer"
                         type="range"
                         name="words"
                         id="words"
