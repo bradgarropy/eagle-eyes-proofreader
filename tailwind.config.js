@@ -3,7 +3,12 @@
 const config = {
     content: ["./src/**/*.{ts,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                "eagle-red": "#fd2844",
+                "eagle-orange": "#fdb000",
+            },
+        },
     },
     plugins: [],
 }
