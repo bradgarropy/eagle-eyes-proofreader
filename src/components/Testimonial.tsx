@@ -25,6 +25,13 @@ const Testimonial: FC<TestimonialProps> = ({testimonial}) => {
                     {testimonial.author}
                 </a>
             </h3>
+
+            <a
+                className="text-lg mt-2 inline-block"
+                href={testimonial.bookLink}
+            >
+                {testimonial.book}
+            </a>
         </div>
     )
 }
