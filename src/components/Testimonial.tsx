@@ -12,7 +12,7 @@ const Testimonial: FC<TestimonialProps> = ({testimonial}) => {
             <div className="relative">
                 <p className="leading-loose">{testimonial.quote}</p>
 
-                <p className="text-[12rem] leading-none absolute -top-20 -left-20 text-eagle-orange opacity-15">
+                <p className="text-[12rem] leading-none absolute -top-20 -left-20 text-eagle-orange opacity-15 select-none">
                     ❝
                 </p>
             </div>
