@@ -15,6 +15,11 @@ export const links: LinksFunction = () => {
             rel: "stylesheet",
             href: tailwindStyles,
         },
+        {
+            rel: "icon",
+            href: "/eagle-head.png",
+            type: "image/png",
+        },
     ]
 
     return links

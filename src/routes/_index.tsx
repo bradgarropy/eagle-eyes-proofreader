@@ -34,6 +34,12 @@ const IndexRoute = () => {
     return (
         <div className="px-12 py-16 bg-gradient-to-b from-white from-80% to-yellow-300">
             <section id="hero" className="text-center">
+                <img
+                    src="/eagle-head.png"
+                    alt="eagle eyes logo - head only"
+                    className="text-center mx-auto max-w-28"
+                />
+
                 <h1 className="text-6xl font-extrabold underline underline-offset-[1rem] decoration-wavy decoration-eagle-red ">
                     Eagle Eyes Proofreader
                 </h1>
@@ -136,8 +142,17 @@ const IndexRoute = () => {
                 })}
             </section>
 
-            <section id="contact" className="text-center mt-24">
-                <h2 className="text-4xl font-bold mb-4">
+            <section
+                id="contact"
+                className="grid justify-center justify-items-end mt-24"
+            >
+                <img
+                    src="/eagle.png"
+                    alt="eagle eyes logo"
+                    className="max-w-24 -my-2 z-10"
+                />
+
+                <h2 className="text-4xl font-bold">
                     <a
                         href="https://forms.gle/uMhkq97Q6Dvc31meA"
                         target="_blank"
