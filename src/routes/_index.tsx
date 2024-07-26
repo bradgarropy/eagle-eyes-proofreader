@@ -40,7 +40,7 @@ const IndexRoute = () => {
                     className="text-center mx-auto max-w-28"
                 />
 
-                <h1 className="text-6xl font-extrabold underline underline-offset-[1rem] decoration-wavy decoration-eagle-red ">
+                <h1 className="text-6xl font-extrabold underline underline-offset-[1rem] decoration-wavy decoration-eagle-red leading-normal">
                     Eagle Eyes Proofreader
                 </h1>
 
@@ -81,7 +81,7 @@ const IndexRoute = () => {
                     </p>
                 </div>
 
-                <div className="flex justify-center gap-x-8">
+                <div className="grid grid-cols-[repeat(3,auto)] justify-center justify-items-center gap-8 max-[1120px]:grid-cols-1">
                     {plans.map(plan => {
                         return (
                             <Plan
