@@ -40,7 +40,7 @@ const IndexRoute = () => {
                     className="text-center mx-auto max-w-28"
                 />
 
-                <h1 className="text-6xl font-extrabold underline underline-offset-[1rem] decoration-wavy decoration-eagle-red leading-normal">
+                <h1 className="text-6xl font-extrabold underline underline-offset-[1rem] decoration-wavy decoration-eagle-red max-[750px]:leading-normal">
                     Eagle Eyes Proofreader
                 </h1>
 
