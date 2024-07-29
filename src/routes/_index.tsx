@@ -2,7 +2,7 @@ import type {MetaFunction} from "@remix-run/cloudflare"
 import {useEffect, useState} from "react"
 
 import Plan from "~/components/Plan"
-import Testimonial from "~/components/Testimonial"
+import Testimonials from "~/components/Testimonials"
 import {plans} from "~/data/plans"
 import {testimonials} from "~/data/testimonials"
 import {formatNumber, formatPrice} from "~/utils/format"
@@ -132,14 +132,7 @@ const IndexRoute = () => {
                     Authors Love Eagle Eyes!
                 </h2>
 
-                {testimonials.map(testimonial => {
-                    return (
-                        <Testimonial
-                            key={testimonial.author}
-                            testimonial={testimonial}
-                        />
-                    )
-                })}
+                <Testimonials testimonials={testimonials} />
             </section>
 
             <section
