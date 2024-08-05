@@ -55,7 +55,7 @@ const IndexRoute = () => {
             >
                 <div className="flex flex-col items-center gap-y-4">
                     <img
-                        src="https://res.cloudinary.com/bradgarropy/image/upload/f_auto,q_auto,c_auto,g_auto,w_500,h_300/eagle-eyes-proofreader/flowers.jpg"
+                        src="https://res.cloudinary.com/danpkmcur/image/upload/f_auto,q_auto,c_auto,g_auto,w_500,h_300/flowers.jpg"
                         alt="Heather Kelley"
                         className="rounded-lg border-2 border-gray-500 max-w-[500px]"
                     />
