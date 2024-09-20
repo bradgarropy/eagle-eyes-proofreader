@@ -20,7 +20,7 @@ const testimonials: Testimonial[] = [
         authorLink: "https://belindamary.com",
         book: "Actually Yours",
         bookLink: "https://amzn.to/3BaOmO9",
-        quote: "Even after several rounds of editing and read-throughs, Heather's eagle eyes always finds those last few typos that everyone else has missed. I can't recommend her enough!",
+        quote: "Even after several rounds of editing and read-throughs, Heather's eagle eyes always find those last few typos that everyone else has missed. I can't recommend her enough!",
     },
 ]
 
