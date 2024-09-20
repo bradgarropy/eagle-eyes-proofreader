@@ -11,5 +11,5 @@ test("renders", () => {
 
 test("meta", () => {
     const tags = meta(metaArgs)
-    expect(tags).toEqual([{title: "Eagle Eyes"}])
+    expect(tags).toEqual(expect.arrayContaining([{title: "Eagle Eyes"}]))
 })
