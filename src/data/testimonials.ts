@@ -15,6 +15,13 @@ const testimonials: Testimonial[] = [
         bookLink: "https://amzn.to/46tXHMr",
         quote: "Heather has been a 'last look' reader for several of my books and her eagle eyes have been so helpful in catching typos and inconsistencies that have slipped through the cracks. She's fast, thorough and wonderful to work with!",
     },
+    {
+        author: "Belinda Mary",
+        authorLink: "https://belindamary.com",
+        book: "Actually Yours",
+        bookLink: "https://amzn.to/3BaOmO9",
+        quote: "Even after several rounds of editing and read-throughs, Heather's eagle eyes always find those last few typos that everyone else has missed. I can't recommend her enough!",
+    },
 ]
 
 export {testimonials}

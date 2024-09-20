@@ -6,10 +6,10 @@ import {metaArgs} from "~/utils/testUtils"
 
 test("renders", () => {
     render(<IndexRoute />)
-    expect(screen.getByText("Home")).toBeInTheDocument()
+    expect(screen.getByText("Eagle Eyes Proofreader")).toBeInTheDocument()
 })
 
 test("meta", () => {
     const tags = meta(metaArgs)
-    expect(tags).toEqual([{title: "remix starter | home"}])
+    expect(tags).toEqual(expect.arrayContaining([{title: "Eagle Eyes"}]))
 })
