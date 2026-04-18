@@ -119,12 +119,12 @@ const IndexRoute = () => {
                     />
                 </div>
 
-                <div className="grid grid-cols-[12ch,auto,11ch,auto,7ch] justify-center gap-x-8 text-2xl tabular-nums mt-8">
+                <div className="grid grid-cols-[12ch,auto,11ch,auto,9ch] justify-center gap-x-8 text-2xl tabular-nums mt-8">
                     <p className="justify-self-end">{`${formatNumber(words)} words`}</p>
                     <p>{"×"}</p>
                     <p className="justify-self-center">{`${formatPrice(selectedPlan.price, 3)} / word`}</p>
                     <p>{"="}</p>
-                    <p className="font-bold justify-self-end">{`${formatPrice(total)}`}</p>
+                    <p className="font-bold justify-self-end">{`${formatPrice(total, 2)}`}</p>
                 </div>
             </section>
 
