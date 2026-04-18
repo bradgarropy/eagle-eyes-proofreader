@@ -1,7 +1,7 @@
 import type {MetaFunction} from "@remix-run/cloudflare"
 import {useEffect, useState} from "react"
-import Footer from "~/components/Footer"
 
+import Footer from "~/components/Footer"
 import Plan from "~/components/Plan"
 import Testimonials from "~/components/Testimonials"
 import {plans} from "~/data/plans"
